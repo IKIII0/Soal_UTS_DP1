@@ -1,4 +1,4 @@
-program harga_jarak; //nama program (opsional)
+program soal1uts; //nama program (opsional)
 uses crt; // untuk clearscreen
 var 
     km,total,total1:real; //variabel
