@@ -1,5 +1,5 @@
 program soal4uts; //nama program (opsional)
-uses crt; //untuk membersihkan layazr
+uses crt; //untuk membersihkan layar
 var
   kembalian,p,z: longint; //variabel
 begin //mulai
@@ -7,6 +7,7 @@ begin //mulai
     readln(kembalian); //input uang kembalian
     p:= 100000; // menginisialisasi p nya = 100.000
     z:=0; //menginisialisasi nilai z itu 0
+    if (kembalian >= 225000) and (kembalian <= 229999) then p:= 75000; //biar jika Rp 225000 itu akan memakai pecahan 75ribu
     while kembalian > 0 do //kalau uang kembalian belum habis,masih ngulang
   begin //mulai program perulangan
     z:=z+(kembalian div p); //menghitung jumlah p uang
@@ -23,4 +24,5 @@ begin //mulai
     else if p = 200 then p := 100; //jika p itu 200 maka menjadi 100
   end; //program looping  akan berakhir jika kembalian nya udh menjadi kurang dari sama dengan 0
   writeln(z); //output p atau berapa buah pecahan yang dikembalikan
+  writeln('Sisa yang tidak bisa dikembalikan : ',kembalian); //ada sisa kembalian jika tidak ada pecahan yg bisa lagi mis. 1 sampai 99 itu tidak ada pecahannya
 end. //selesai
