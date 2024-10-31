@@ -1,4 +1,4 @@
-program harga_jarak; //nama program (opsional)
+program soal1uts; //nama program (opsional)
 uses crt; // untuk clearscreen
 var 
     km,total,total1:real; //variabel
@@ -15,7 +15,7 @@ begin //memulai program if
     else //jika tidak juga berarti km pasti lebih dari 10
         total:= km*3000 + 20000; //maka akan di hitung sesuai ketentuannya
     total1:= total; //menginisialisasi total sama dengan total1
-    if (total1 > 100000) and (prem = 'True') or (prem = 'True') then //jika harga total1 itu lebih dari 100000 dan dia premium
+    if (total1 > 100000) and (prem = 'True') or (prem = 'true') then //jika harga total1 itu lebih dari 100000 dan dia premium
         total1:= total1*0.85 //maka akan dapat diskon sebesar 15%
     else if (prem = 'True') or (prem = 'true') then //jika hanya anggota premium saja
         total1:= total1*0.95 //maka akan dapat diskon 5%
